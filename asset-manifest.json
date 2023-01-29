@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/project-countryfinder/static/css/main.5a2e4a19.css",
+    "main.js": "/project-countryfinder/static/js/main.d4392da8.js",
+    "static/media/background.jpg": "/project-countryfinder/static/media/background.b9ce8b01a367de321fa7.jpg",
+    "static/media/logo.png": "/project-countryfinder/static/media/logo.ad340a85595d735f6865.png",
+    "index.html": "/project-countryfinder/index.html",
+    "main.5a2e4a19.css.map": "/project-countryfinder/static/css/main.5a2e4a19.css.map",
+    "main.d4392da8.js.map": "/project-countryfinder/static/js/main.d4392da8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a2e4a19.css",
+    "static/js/main.d4392da8.js"
+  ]
+}
