@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 50px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1077px) {
+    #container {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 869px) {
+    #container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    #band {
+        flex-direction: column;
+    }
+
+    #couple {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    #container {
+        grid-template-columns: auto auto;
+    }
+}
+
+.card {
+    background-color: rgb(161 248 240 / .88);
+    border: 5px double black;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.flag {
+    width: 125px;
+    height: 75px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #000000, #ffffff00);
+}
+
+#couple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#bar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: rgba(161, 248, 239, 0.88);
+    border-right: none;
+    transform: rotatex(90deg);
+    transition: 1000ms;
+}
+
+
+.material-symbols-outlined {
+    position: relative;
+    right: 1px;
+    font-size: 60px;
+    background-color: rgba(161, 248, 239, 0.70);
+    border-radius: 20px;
+    border: 1px solid black;
+    user-select: none;
+}
+
+.material-symbols-outlined:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#boxer {
+    display: none;
+}
+
+#boxer:checked ~ label .material-symbols-outlined {
+    transition: 1000ms;
+    color: red;
+    border-left: none;
+}
+
+#boxer:checked + #bar {
+    transition: 1000ms;
+    transform: initial;
+}
